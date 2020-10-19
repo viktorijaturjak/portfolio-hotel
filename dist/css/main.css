@@ -603,6 +603,9 @@ html, body {
 }
 
 @media only screen and (min-width: 1351px) and (max-width: 2000px) {
+  .showcase .showcase-content {
+    margin-top: 15rem !important;
+  }
   .showcase .showcase-content .transparent-box h1 {
     font-size: 4rem !important;
   }
@@ -642,6 +645,10 @@ html, body {
   }
   .book-now {
     margin-top: .25rem !important;
+  }
+  .book-now .booking {
+    width: 65%;
+    margin: 0 auto;
   }
   .book-now .booking .booking-flex {
     -webkit-box-orient: horizontal !important;
@@ -1040,7 +1047,7 @@ html, body {
       -ms-flex-align: center;
           align-items: center;
   text-align: center;
-  margin: 12rem auto;
+  margin: 5rem auto;
 }
 
 .showcase .showcase-content .transparent-box {
@@ -1074,7 +1081,7 @@ html, body {
 
 .place-like-home {
   margin: 4rem 0;
-  padding: 0 4rem;
+  padding: 0 2rem;
   text-align: center;
 }
 
@@ -1105,7 +1112,7 @@ html, body {
 }
 
 .best .best-right {
-  padding: 2rem 4rem;
+  padding: 2rem;
   text-align: center;
 }
 
@@ -1127,7 +1134,7 @@ html, body {
 }
 
 .book-now .booking .booking-flex {
-  width: 70%;
+  width: 100%;
   margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1197,7 +1204,7 @@ html, body {
 footer {
   background-color: #111111;
   text-align: center;
-  padding: 1rem 0 1rem 0;
+  padding: 1rem 0;
 }
 
 footer p {
@@ -1232,7 +1239,7 @@ footer p {
       -ms-flex-direction: column;
           flex-direction: column;
   text-align: center;
-  padding: 0 4rem;
+  padding: 0 2rem;
 }
 
 .showcase-short-content .content-flex br {
@@ -1253,7 +1260,7 @@ footer p {
 
 .about-family .about-right {
   margin-top: 2rem;
-  padding: 0 4rem 2rem 4rem;
+  padding: 0 2rem 2rem 2rem;
   text-align: center;
 }
 
@@ -1297,7 +1304,7 @@ footer p {
 
 .our-team .our-team-container {
   margin: 2rem auto;
-  padding: 0 4rem;
+  padding: 0 2rem;
 }
 
 .our-team .our-team-container .team-left {
@@ -1440,7 +1447,7 @@ footer p {
 }
 
 .rooms-description .room .room-right {
-  padding: 2rem 4rem;
+  padding: 2rem;
   text-align: center;
 }
 

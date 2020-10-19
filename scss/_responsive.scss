@@ -383,6 +383,7 @@
     .showcase {
 
         .showcase-content {
+            margin-top: 15rem !important;
 
             .transparent-box {
 
@@ -444,6 +445,8 @@
         margin-top: .25rem !important;
 
         .booking {
+            width: 65%;
+            margin: 0 auto;
 
             .booking-flex {
                 flex-direction: row !important;
