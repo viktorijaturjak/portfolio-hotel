@@ -73,45 +73,45 @@
 
     <!-- BOOKING -->
     <section class="book-now book-now-contact">
-        <form action="" class="booking">
-            <div class="booking-flex">
-                <div class="booking-flex-container">
-                    <p>check-in-date</p>
-                    <input type="date">
-                </div>
-                <div class="booking-flex-container">
-                    <p>check-out-date</p>
-                    <input type="date">
-                </div>
-                <div class="booking-flex-container">
-                    <p>adults</p>
-                    <input type="number">
-                </div>
+      <form action="booking.php" method="post" class="booking">
+        <div class="booking-flex">
+            <div class="booking-flex-container">
+                <p>check-in-date</p>
+                <input type="date" name="checkin">
             </div>
-            <div class="booking-flex">
-                <div class="booking-flex-container">
-                    <p>children</p>
-                    <input type="number">
-                </div>
-                <div class="booking-flex-container">
-                    <p>room</p>
-                    <select name="" id="">
-                        <option value="">Superior Room</option>
-                        <option value="">Junior Deluxe Suite</option>
-                        <option value="">Deluxe Room</option>
-                        <option value="">Deluxe Suite</option>
-                        <option value="">Suite</option>
-                    </select>
-                </div> 
-                <div class="booking-flex-container">
-                    <p>number of rooms</p>
-                    <input type="number">
-                </div>
+            <div class="booking-flex-container">
+                <p>check-out-date</p>
+                <input type="date" name="checkout">
             </div>
-            <div class="btn-box">
-                <a href="" class="btn-main btn-black">book now</a>
+            <div class="booking-flex-container">
+                <p>adults</p>
+                <input type="number" name="number">
             </div>
-        </form>
+        </div>
+        <div class="booking-flex">
+            <div class="booking-flex-container">
+                <p>children</p>
+                <input type="number" name="children">
+            </div>
+            <div class="booking-flex-container">
+                <p>room</p>
+                <select name="room" id="">
+                    <option value="Superiro Room">Superior Room</option>
+                    <option value="Junior Deluxe Suite">Junior Deluxe Suite</option>
+                    <option value="Deluxe Room">Deluxe Room</option>
+                    <option value="Deluxe Suite">Deluxe Suite</option>
+                    <option value="Suite">Suite</option>
+                </select>
+            </div> 
+            <div class="booking-flex-container">
+                <p>number of rooms</p>
+                <input type="number" name="roomnumber">
+            </div>
+        </div>
+        <div class="btn-box">
+            <button class="btn-main btn-black" type="submit" name="submit">book now</button>
+        </div>
+    </form>
     </section>
 
     <!-- ROOMS DESCRIPTION -->
