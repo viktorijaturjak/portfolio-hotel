@@ -10,6 +10,8 @@ if (isset($_POST['submit'])) {
     $headers = "From: ".$mailFrom;
     $txt = "You have received an e-mail from ".$name.".\n\n".$$message;
 
-    mail($mailTo, $txt, $headers, $message);
-    header("Location: index.html?mailsend");
+    if(mail($mailTo, $txt, $headers, $message)) {
+        echo "<script>alert('Mail sent!');</script>";
+        echo "<script>document.location.href='index.html'</script>";
+    }
 }

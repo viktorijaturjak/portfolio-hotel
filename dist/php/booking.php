@@ -17,6 +17,8 @@ if (isset($_POST['submit'])) {
     $headers .= "Room: ".$room."\r\n";
     $headers .= "Room number: " .$roomnumber;
 
-    mail($mailTo, $subject, $headers);
-    header("Location: index.html?mailsend");
+    if(mail($mailTo, $subject, $headers)) {
+        echo "<script>alert('Booked!');</script>";
+        echo "<script>document.location.href='index.html'</script>";
+    }
 }

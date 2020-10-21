@@ -60,25 +60,25 @@
             <div class="booking-flex">
                 <div class="booking-flex-container">
                     <p>check-in-date</p>
-                    <input type="date" name="checkin">
+                    <input type="date" name="checkin" required>
                 </div>
                 <div class="booking-flex-container">
                     <p>check-out-date</p>
-                    <input type="date" name="checkout">
+                    <input type="date" name="checkout" required>
                 </div>
                 <div class="booking-flex-container">
                     <p>adults</p>
-                    <input type="number" name="number">
+                    <input type="number" name="number" required>
                 </div>
             </div>
             <div class="booking-flex">
                 <div class="booking-flex-container">
                     <p>children</p>
-                    <input type="number" name="children">
+                    <input type="number" name="children" required>
                 </div>
                 <div class="booking-flex-container">
                     <p>room</p>
-                    <select name="room" id="">
+                    <select name="room" id="" required>
                         <option value="Superiro Room">Superior Room</option>
                         <option value="Junior Deluxe Suite">Junior Deluxe Suite</option>
                         <option value="Deluxe Room">Deluxe Room</option>
@@ -88,7 +88,7 @@
                 </div> 
                 <div class="booking-flex-container">
                     <p>number of rooms</p>
-                    <input type="number" name="roomnumber">
+                    <input type="number" name="roomnumber" required>
                 </div>
             </div>
             <div class="btn-box">
@@ -102,19 +102,19 @@
         <form action="contactform.php" method="post" class="message">
             <div class="message-container">
                 <p>First Name</p>
-                <input type="text" name="name">
+                <input type="text" name="name" required>
             </div>
             <div class="message-container">
                 <p>Last Name</p>
-                <input type="text" name="lastname">
+                <input type="text" name="lastname" required>
             </div>
             <div class="message-container">
                 <p>E-mail</p>
-                <input type="mail" name="mail">
+                <input type="mail" name="mail" required>
             </div>
             <div class="message-container">
                 <p>Message</p>
-                <textarea name="message" id="" ></textarea>
+                <textarea name="message" id="" required></textarea>
             </div>
             <div class="btn-box">
                 <button class="btn-main" type="submit" name="submit">send</button>
