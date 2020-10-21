@@ -111,17 +111,18 @@
                 </div>
                 <div class="booking-flex-container">
                     <p>adults</p>
-                    <input type="number" name="number" required>
+                    <input type="number" min="0" name="number" required>
                 </div>
             </div>
             <div class="booking-flex">
                 <div class="booking-flex-container">
                     <p>children</p>
-                    <input type="number" name="children" required>
+                    <input type="number" min="0" name="children" required>
                 </div>
                 <div class="booking-flex-container">
                     <p>room</p>
                     <select name="room" id="" required>
+                        <option style="display:none">Please select room</option>
                         <option value="Superiro Room">Superior Room</option>
                         <option value="Junior Deluxe Suite">Junior Deluxe Suite</option>
                         <option value="Deluxe Room">Deluxe Room</option>
@@ -131,7 +132,7 @@
                 </div> 
                 <div class="booking-flex-container">
                     <p>number of rooms</p>
-                    <input type="number" name="roomnumber" required>
+                    <input type="number" min="0" name="roomnumber" required>
                 </div>
             </div>
             <div class="btn-box">

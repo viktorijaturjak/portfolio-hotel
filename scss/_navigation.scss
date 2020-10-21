@@ -4,6 +4,9 @@
     background: $nav-background;
     font-family: $headings;
     z-index: 1000;
+    position: absolute;
+    width: 100%;
+    top: 0;
 }
   
 // Logo and branding

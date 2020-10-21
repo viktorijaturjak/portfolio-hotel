@@ -72,47 +72,48 @@
     </section>
 
     <!-- BOOKING -->
-    <section class="book-now book-now-contact">
+    <section class="book-now">
       <form action="booking.php" method="post" class="booking">
-        <div class="booking-flex">
-            <div class="booking-flex-container">
-                <p>check-in-date</p>
-                <input type="date" name="checkin" required>
-            </div>
-            <div class="booking-flex-container">
-                <p>check-out-date</p>
-                <input type="date" name="checkout" required>
-            </div>
-            <div class="booking-flex-container">
-                <p>adults</p>
-                <input type="number" name="number" required>
-            </div>
-        </div>
-        <div class="booking-flex">
-            <div class="booking-flex-container">
-                <p>children</p>
-                <input type="number" name="children" required>
-            </div>
-            <div class="booking-flex-container">
-                <p>room</p>
-                <select name="room" id="" required>
-                    <option value="Superiro Room">Superior Room</option>
-                    <option value="Junior Deluxe Suite">Junior Deluxe Suite</option>
-                    <option value="Deluxe Room">Deluxe Room</option>
-                    <option value="Deluxe Suite">Deluxe Suite</option>
-                    <option value="Suite">Suite</option>
-                </select>
-            </div> 
-            <div class="booking-flex-container">
-                <p>number of rooms</p>
-                <input type="number" name="roomnumber" required>
-            </div>
-        </div>
-        <div class="btn-box">
-            <button class="btn-main btn-black" type="submit" name="submit">book now</button>
-        </div>
-    </form>
-    </section>
+          <div class="booking-flex">
+              <div class="booking-flex-container">
+                  <p>check-in-date</p>
+                  <input type="date" name="checkin" required>
+              </div>
+              <div class="booking-flex-container">
+                  <p>check-out-date</p>
+                  <input type="date" name="checkout" required>
+              </div>
+              <div class="booking-flex-container">
+                  <p>adults</p>
+                  <input type="number" min="0" name="number" required>
+              </div>
+          </div>
+          <div class="booking-flex">
+              <div class="booking-flex-container">
+                  <p>children</p>
+                  <input type="number" min="0" name="children" required>
+              </div>
+              <div class="booking-flex-container">
+                  <p>room</p>
+                  <select name="room" id="" required>
+                      <option style="display:none">Please select room</option>
+                      <option value="Superiro Room">Superior Room</option>
+                      <option value="Junior Deluxe Suite">Junior Deluxe Suite</option>
+                      <option value="Deluxe Room">Deluxe Room</option>
+                      <option value="Deluxe Suite">Deluxe Suite</option>
+                      <option value="Suite">Suite</option>
+                  </select>
+              </div> 
+              <div class="booking-flex-container">
+                  <p>number of rooms</p>
+                  <input type="number" min="0" name="roomnumber" required>
+              </div>
+          </div>
+          <div class="btn-box">
+              <button class="btn-main btn-black" type="submit" name="submit">book now</button>
+          </div>
+      </form>
+  </section>
 
     <!-- ROOMS DESCRIPTION -->
     <section class="rooms-description">

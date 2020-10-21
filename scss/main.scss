@@ -14,6 +14,7 @@
     background-repeat: no-repeat;
     background-position: bottom;
     height: 100vh;
+    margin-top: -11rem;
 
     .showcase-content {
         display: flex;
@@ -26,6 +27,7 @@
             background-color: rgba(0, 0, 0, 0.6);
             padding: 2rem 3rem 1.5rem 3rem;
             margin-bottom: 4rem;
+            margin-top: 15rem;
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -318,6 +320,10 @@ footer {
         width: 15rem;
         height: 2.5rem;
         border: 1px solid $nav-background;
+
+        &:focus {
+            outline: none;
+        }
     }
 
     textarea {
@@ -325,6 +331,10 @@ footer {
         width: 15rem;
         height: 2.5rem;
         border: 1px solid $nav-background;
+
+        &:focus {
+            outline: none;
+        }
     }
 
     .btn-main {

@@ -76,6 +76,9 @@ img {
   background: #111111;
   font-family: "Merriweather", serif;
   z-index: 1000;
+  position: absolute;
+  width: 100%;
+  top: 0;
 }
 
 .brand {
@@ -798,7 +801,10 @@ html, body {
 
 @media only screen and (min-width: 2001px) {
   .showcase .big-screen {
-    margin-top: 20rem !important;
+    margin-top: 10rem !important;
+  }
+  .showcase .big-screen .transparent-box {
+    margin-top: 25rem !important;
   }
   .showcase .big-screen .transparent-box h1 {
     font-size: 5rem !important;
@@ -1033,6 +1039,7 @@ html, body {
   background-repeat: no-repeat;
   background-position: bottom;
   height: 100vh;
+  margin-top: -11rem;
 }
 
 .showcase .showcase-content {
@@ -1054,6 +1061,7 @@ html, body {
   background-color: rgba(0, 0, 0, 0.6);
   padding: 2rem 3rem 1.5rem 3rem;
   margin-bottom: 4rem;
+  margin-top: 15rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1352,11 +1360,19 @@ footer p {
   border: 1px solid #111111;
 }
 
+.form-message input:focus {
+  outline: none;
+}
+
 .form-message textarea {
   resize: none;
   width: 15rem;
   height: 2.5rem;
   border: 1px solid #111111;
+}
+
+.form-message textarea:focus {
+  outline: none;
 }
 
 .form-message .btn-main {
