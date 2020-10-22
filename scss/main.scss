@@ -126,6 +126,24 @@
                     height: 2.5rem;
                     border: none;
                     margin-bottom: .5rem;
+                    font-size: 1rem;
+                    color: grey;
+                    padding-left: .5rem;
+
+                    &:focus {
+                        outline: none;
+                    }
+                }
+
+                select {
+                    cursor: pointer;
+                }
+
+                input {
+
+                    &::-webkit-calendar-picker-indicator {
+                        cursor: pointer;
+                    }
                 }
             }
         }
@@ -320,6 +338,10 @@ footer {
         width: 15rem;
         height: 2.5rem;
         border: 1px solid $nav-background;
+        padding-left: .5rem;
+        font-size: 1rem;
+        font-family: Montserrat;
+        color: grey;
 
         &:focus {
             outline: none;
@@ -331,6 +353,11 @@ footer {
         width: 15rem;
         height: 2.5rem;
         border: 1px solid $nav-background;
+        padding-left: .5rem;
+        padding-top: .5rem;
+        font-size: 1rem !important;
+        font-family: Montserrat;
+        color: grey;
 
         &:focus {
             outline: none;

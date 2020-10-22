@@ -1169,6 +1169,22 @@ html, body {
   height: 2.5rem;
   border: none;
   margin-bottom: .5rem;
+  font-size: 1rem;
+  color: grey;
+  padding-left: .5rem;
+}
+
+.book-now .booking .booking-flex .booking-flex-container input:focus,
+.book-now .booking .booking-flex .booking-flex-container select:focus {
+  outline: none;
+}
+
+.book-now .booking .booking-flex .booking-flex-container select {
+  cursor: pointer;
+}
+
+.book-now .booking .booking-flex .booking-flex-container input::-webkit-calendar-picker-indicator {
+  cursor: pointer;
 }
 
 .book-now .booking .btn-box {
@@ -1358,6 +1374,10 @@ footer p {
   width: 15rem;
   height: 2.5rem;
   border: 1px solid #111111;
+  padding-left: .5rem;
+  font-size: 1rem;
+  font-family: Montserrat;
+  color: grey;
 }
 
 .form-message input:focus {
@@ -1369,6 +1389,11 @@ footer p {
   width: 15rem;
   height: 2.5rem;
   border: 1px solid #111111;
+  padding-left: .5rem;
+  padding-top: .5rem;
+  font-size: 1rem !important;
+  font-family: Montserrat;
+  color: grey;
 }
 
 .form-message textarea:focus {
